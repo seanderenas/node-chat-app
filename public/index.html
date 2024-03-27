@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real-Time Chat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-dark text-warning">
+  <nav class="navbar bg-dark text-warning">
+    <div class="container-fluid text-warning">
+      <a class="navbar-brand text-warning" href="https://getbootstrap.com/">
+        Bootstrap
+      </a>
+      <a class="navbar-brand text-warning" href="https://getbootstrap.com/">
+        Bootstrap
+      </a>
+      <a class="navbar-brand text-warning" href="https://getbootstrap.com/">
+        Bootstrap
+      </a>
+      <a class="navbar-brand text-warning" href="https://getbootstrap.com/">
+        Bootstrap
+      </a>
+      <a class="navbar-brand text-warning" href="https://getbootstrap.com/">
+        Bootstrap
+      </a>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>App Real Chat-Time </h1>
+
+    <div id="userWelcome"> </div>
+
+      <div id="roomChat">
+        <form id="roomForm">
+          <input id="roomInput" class="bg-dark text-warning border border-warning" autocomplete="off" placeholder="epic gamers room">
+          <button class="btn btn-warning d-none" id="messageRoomBtn">Message Room</button>
+        </form>
+        <button id="joinRoom" class="btn btn-warning">Join Room</button><!-- PRINT OUT ROOM NAME ITS NOT WORKING ATM -->
+      </div>
+
+    
+    <div id="setUserName">
+      <form action="" id="userNameForm">
+        <label>Username: </label>
+        <input id="userName" class="bg-dark text-warning border border-warning" placeholder="Name of user">
+        <button id="userNameButton" class="btn btn-warning">Submit</button>
+      </form>
+    </div>
+
+    
+    <div id="chat" class="d-none">
+      <ul id="messages"></ul>
+      <form id="messageForm">
+        <label>Message: </label>
+        <input id="messageInput" class="bg-dark text-warning border border-warning" placeholder="Message to send" autocomplete="off" />
+        <button class="btn btn-warning">Send</button>
+      </form>
+
+      <div id="myDiv" class="d-none">
+        <button id="myButton" class="btn btn-warning">Click for virus</button>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </div>
+</body>
+</html>
