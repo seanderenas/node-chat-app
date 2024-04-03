@@ -20,7 +20,7 @@
 `node app.js`
 *or*
 `nodemon app.js`
-** Find me at http://localhost:3000 !!**
+** Find me at http://localhost:3000 !! **
 
 ## How it Works
 The server **app.js** manages user connections and messages using Socket.IO.
